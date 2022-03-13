@@ -1,0 +1,453 @@
+/* &display=swap */
+@import "null.css";
+/* ================================================================ */
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Black.woff2")   format("woff2"), url("../fonts/CircularStd-Black.woff") format("woff");
+		font-display: swap;
+			font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Bold.woff2")   format("woff2"), url("../fonts/CircularStd-Bold.woff") format("woff");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff");
+	font-display: swap;
+		font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-BookItalic.woff2")   format("woff2"), url("../fonts/CircularStd-BookItalic.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Medium.woff2") format("woff2"), url("../fonts/CircularStd-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Black.woff2")   format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Bold.woff2")   format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.woff2")   format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ================================================================ */
+.wrapper {
+}
+.container {
+	max-width: 1200px;
+margin: 0 auto;
+}
+.header {
+	background:linear-gradient(180deg, rgba(131, 58, 180, 0) 0%, rgba(255, 255, 255, 1) 100%),url("../img/6-848.png") center / cover no-repeat;
+	padding: 15px;
+}
+.title {
+	font-family: "CircularStd", sans-serif;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 1.2;
+	text-align: right;
+	margin: 0 0 15px 0;
+}
+.title:hover{
+	display: inline-block;
+		text-decoration: underline;
+		text-shadow: 2px 1px 0 rgb(37, 131, 185);
+			background: linear-gradient(0deg, rgba(251, 251, 251, 0.317) 0%, rgba(15, 106, 107, 0.535) 100%);
+
+}
+.menu {
+	font-size: 0;
+	text-align: center;
+	margin: 0 0 16px 0;
+}
+.menu-link {
+		background: #329487;
+		color: rgb(73, 63, 63);
+		display: inline-block;
+		font-family: "CircularStd", sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+		padding: 10px;
+	text-transform: uppercase;
+}
+.menu-link:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+.menu-link:active{
+	color: rgb(211, 195, 195);
+			text-shadow: 1px 2px 2px rgb(209, 66, 66);
+
+}
+.menu-link:visited{
+	color: rgb(133, 82, 82);
+}
+.menu-link.menu{
+	font-family: "CircularStd", sans-serif;
+	font-weight: 500;
+	text-decoration: underline;
+	text-shadow: 0 2px 1px rgb(73, 62, 62);
+}
+.menu-link.menu:hover{
+	text-decoration: none;
+}
+.menu-link.menu:active{
+		color: rgba(112, 4, 4, 0.699);
+		text-shadow: 1px 0 2px rgb(212, 101, 101);
+}
+.menu-link.menu:visited{
+	color: rgb(29, 8, 8);
+}
+.subtitle {
+	display: inline-block;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0 0 20px 0;
+}
+.subtitle:hover{
+	font-family: "CircularStd", sans-serif;
+	display: inline-block;
+	color: rgb(4, 90, 86);
+			background: linear-gradient(0deg, rgba(251, 251, 251, 0.317) 0%, rgba(35, 181, 184, 0.535) 100%);
+						text-shadow: 1px 2px 2px rgba(36, 154, 170, 0.253);	
+}
+.subtitle:target{
+	color: red;
+	font-style: italic;
+}
+.subtitle::after{
+	content:"";
+	display: block;
+	height: 4px;
+	width: 25%;
+	margin: 5px 0 0 0;
+	background:#329487;
+}
+.nav {
+		margin: 0 0 5px 0;
+}
+.list {
+}
+ul.list li:not(:last-child){
+	margin: 0 0 10px 0;
+}
+.link {
+	font-family: "CircularStd", sans-serif;
+}
+ul.list li:hover+li{
+	display: inline-block;
+	background:#461b3c4d;
+	border-radius: 10px;
+}
+ul.list li::first-letter{
+	color: #cc15a4;
+	font-weight: 900;
+}
+.header>*:last-child{
+	margin: 0;
+}
+.main {
+}
+.content {
+	background: linear-gradient(0deg, rgba(236, 241, 241, 0.317) 0%, rgba(80,219,221,0.5345345345345345) 100%);
+padding: 0 20px;
+font-size: 20px;
+color: rgb(44, 36, 36);
+}
+.block {
+	margin: 0 0 10px 0;
+}
+.block p{
+	font-family: "CircularStd", sans-serif;
+	font-weight: 500;
+	cursor: copy;
+}
+.block p:not(:last-child){
+	margin: 0 0 20px 0;
+}
+.block p:first-of-type{
+	color:rgb(145, 93, 25);
+}
+.block p:first-of-type::first-line{
+text-decoration: underline;
+color:rgb(20, 190, 20);	
+}
+.aside {
+	margin: 0 0 17px 0;
+}
+.block:hover p{
+	opacity: 0.5;
+}
+.button {
+	display: inline-block;
+	background: radial-gradient(circle, rgba(63,94,251,1) 16%, rgba(80,74,144,1) 45%, rgba(187,95,194,0.5521172638436482) 100%);
+	color:#fff;
+	text-transform: uppercase;
+	box-shadow: 0 5px 0 0 #000000;
+	letter-spacing: 4px;
+	padding: 15px;
+cursor:wait;
+}
+.button:nth-of-type(odd){
+		background: radial-gradient(circle, rgb(38, 54, 143) 16%, rgb(51, 126, 67) 45%, rgba(62, 6, 66, 0.552) 100%);
+}
+.button:hover{
+	margin: 2px 0 0 0;
+	background: radial-gradient(circle, rgb(14, 21, 59) 16%, rgb(58, 54, 104) 45%, rgba(187,95,194,0.5521172638436482) 100%);
+		box-shadow: 0 4px 0 0 #000000;	
+}
+.button:active{
+	margin: 4px 0 0 0;
+		box-shadow: inset 0 0 5px 0 #000000;
+}
+.block-text {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: 600;
+	margin: 0 0 23px 0;
+}
+.block-text p:not(:last-child){
+	margin: 0 0 27px 0;
+}
+.block-text p:hover+p::first-line{
+	color:#cc15a4;
+	background: rgba(192, 124, 124, 0.205);
+}
+.list-color li{
+	padding: 0 0 0 35px;
+	margin: 0 0 10px 0;
+}
+.list-color li:nth-of-type(odd){
+color: #72071e;
+}
+.list-color li::before{
+		content:"";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 10px 0 -30px;
+		background: radial-gradient(circle, rgb(14, 21, 59) 16%, rgb(58, 54, 104) 45%, rgba(187,95,194,0.5521172638436482) 100%) 2px 5px / 20px;
+}
+.text-block {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 0 0 8px 0;
+}
+.text-block p:nth-of-type(even){
+	color: #219226;
+}
+.text-block p:not(:last-child){
+	margin: 0 0 18px 0;
+}
+.color-list li{
+padding: 0 0 0 30px;
+margin: 0 0 10px 0;
+}
+.color-list li:hover{
+color: rgba(97, 12, 12, 0.507);
+}
+.color-list li::before{
+	content:"";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: 0px 10px -1px -30px;
+	background: url("../img/logo.png") 0 0 / 20px;
+}
+.block-list {
+	margin: 0px 0px 35px 0px;
+}
+.block-list p{
+	margin: 0px 0px 13px 0px;
+	letter-spacing: 4px;
+}
+.block-list p:hover{
+	background: #21922733;
+}
+.list-title{
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0px 0px 10px 0px;
+}
+.list-title::after{
+	content: "";
+	height:3px;
+	width:20%;
+	background: #648;
+	display: block;
+	margin: 4px 0px 0px 0px;
+}
+ol.num-list li:hover{
+	color: aquamarine;
+}
+.num-list {
+	counter-reset: item;
+}
+.num-list li{
+	padding: 0px 0px 0px 20px;
+}
+.num-list li::before{
+	counter-increment: item;
+	content:counter(item) ".";
+	margin: 0px 8px 0px 0px;
+	color:#648;
+	display: inline-block;
+	margin: 0px 5px 0px -20px;
+}
+ol.num-list li{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	margin: 0px 0px 10px 0px;
+}
+.block-list >*:last-child{
+	margin: 0px 0px 0px 0px;
+}
+.content>*:last-child{
+	margin: 0px 0px 0px 0px;
+}
+.footer {
+}
+================================================================
+.wrapper {
+}
+.header-figma {
+}
+.main-figma {
+}
+.container {
+}
+.why-createx {
+	font-family: "Lato", sans-serif;
+	max-width: 1000px;
+	margin: 0px auto 50px;
+	padding: 30px 10px 0px 10px;
+
+}
+.why-createx-header {
+	color:#1E212C;
+	margin: 0px 0px 40px 0px;
+}
+.why-createx-subtitle {
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 16px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	margin: 0px 0px 8px 0px;
+}
+.why-createx-title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+		margin: 0px 0px 8px 0px;
+}
+.why-createx-header>*:last-child{
+	margin: 0px 0px 0px 0px;
+}
+.why-createx-list {
+	margin: 0px 0px 22px 0px;
+}
+.list-why-createx {
+}
+.list-why-createx li{
+	color:#424551;
+	font-size: 16px;
+	line-height: 1.6;
+	padding: 0px 0px 0px 32px;
+}
+.list-why-createx li::before{
+	content:"";
+width:16px;
+height: 16px;
+display: inline-block;
+background:url("../img/check.svg") 0 0 / 16px;
+margin: 0px 16px 0px -32px;	
+}
+.list-why-createx li:not(:last-child){
+	margin: 0px 0px 12px 0px;
+}
+.why-createx-button {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	line-height: 3.1;
+	color:#fff;
+	background:#FD492B;
+	border-radius: 4px;
+	padding: 0px 32px;
+	margin: 0px 0px 10px 0px;
+}
+.why-createx>*:last-child{
+	margin: 0px 0px 0px 0px;
+}
+.maple-series {
+	display: inline-block;
+}
+.maple-series-title {
+	font-family: "Lato";
+	color:#1E212C;
+	font-size:  30px;
+	letter-spacing: 1px;
+}
+.maple-series-title::after{
+content:"";
+display: block;
+height: 2px;
+width:30%;
+background:#1E212C;
+margin: 3px 0px 0px 0px;
+} 
+ul.list-red li{
+	padding: 0px 0px 0px 20px;
+}
+ul.list-red li::before{
+	content:"";
+	width: 10px;
+	height: 10px;
+	border-radius:50%;
+	background:#219226;
+	display: inline-block;
+	margin: 0px 10px 0px -20px;
+}
+.list-red li:hover::before{
+	background:#2b439c;
+}
+ul.list-red li:hover{
+	color:#cc15a4;
+}
+.footer-figma {
+}
